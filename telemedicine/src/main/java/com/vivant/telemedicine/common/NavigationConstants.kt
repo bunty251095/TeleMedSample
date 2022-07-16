@@ -2,7 +2,7 @@ package com.vivant.telemedicine.common
 
 object NavigationConstants {
 
-    const val APPID = "com.vivant.telemed"
+    const val APPID = "com.test.librarytest"
     const val MAIN = "com.vivant.telemed.MainActivity"
     const val SPLASH_SCREEN = "com.vivant.telemedicine.ui.SplashActivity"
     const val HOME = "com.vivant.telemedicine.ui.TeleMedHomeActivity"
