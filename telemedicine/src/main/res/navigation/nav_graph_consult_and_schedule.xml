@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_consult_and_schedule"
+    app:startDestination="@+id/chooseModeFragment">
+
+    <fragment
+        android:id="@+id/chooseModeFragment"
+        android:name="com.vivant.telemedicine.ui.consultAndSchedule.ChooseModeFragment"
+        tools:layout="@layout/fragment_choose_mode">
+
+        <action
+            android:id="@+id/action_chooseModeFragment_chooseSpecializationFragment"
+            app:destination="@id/chooseSpecializationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chooseSpecializationFragment"
+        android:name="com.vivant.telemedicine.ui.consultAndSchedule.ChooseSpecializationFragment"
+        tools:layout="@layout/fragment_choose_specialization">
+
+        <action
+            android:id="@+id/action_chooseSpecializationFragment_chooseDoctorFragment"
+            app:destination="@id/chooseDoctorFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_chooseSpecializationFragment_to_chooseModeFragment"
+            app:popUpTo="@id/chooseModeFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left" />
+
+        <action
+            android:id="@+id/action_chooseSpecializationFragment_describeSymptomsFragment"
+            app:destination="@id/describeSymptomsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+<!--        <action
+            android:id="@+id/action_chooseSpecializationFragment_chooseSlotFragment"
+            app:destination="@id/chooseSlotFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>-->
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chooseDoctorFragment"
+        android:name="com.vivant.telemedicine.ui.consultAndSchedule.ChooseDoctorFragment"
+        tools:layout="@layout/fragment_choose_doctor">
+
+        <action
+            android:id="@+id/action_chooseDoctorFragment_chooseSlotFragment"
+            app:destination="@id/chooseSlotFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_chooseDoctorFragment_to_chooseSpecializationFragment"
+            app:popUpTo="@id/chooseSpecializationFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chooseSlotFragment"
+        android:name="com.vivant.telemedicine.ui.consultAndSchedule.ChooseSlotFragment"
+        tools:layout="@layout/fragment_choose_slot">
+
+        <action
+            android:id="@+id/action_chooseSlotFragment_describeSymptomsFragment"
+            app:destination="@id/describeSymptomsFragment"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"/>
+
+        <action
+            android:id="@+id/action_chooseSlotFragment_to_chooseDoctorFragment"
+            app:popUpTo="@id/chooseDoctorFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/describeSymptomsFragment"
+        android:name="com.vivant.telemedicine.ui.consultAndSchedule.DescribeSymptomsFragment"
+        tools:layout="@layout/fragment_describe_symptoms">
+
+        <action
+            android:id="@+id/action_describeSymptomsFragment_confirmAppointmentFragment"
+            app:destination="@id/confirmAppointmentFragment"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"/>
+
+        <action
+            android:id="@+id/action_describeSymptomsFragment_to_chooseSlotFragment"
+            app:popUpTo="@id/chooseSlotFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"/>
+
+        <action
+            android:id="@+id/action_describeSymptomsFragment_to_chooseSpecializationFragment"
+            app:popUpTo="@id/chooseSpecializationFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmAppointmentFragment"
+        android:name="com.vivant.telemedicine.ui.consultAndSchedule.ConfirmAppointmentFragment"
+        tools:layout="@layout/fragment_confirm_appointment">
+
+        <action
+            android:id="@+id/action_confirmAppointmentFragment_to_describeSymptomsFragment"
+            app:popUpTo="@id/describeSymptomsFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"/>
+
+    </fragment>
+
+</navigation>

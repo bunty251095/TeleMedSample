@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:visibility="visible">
+
+    <FrameLayout
+        android:id="@+id/layout_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/btn_border_disabled"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_close_input">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_dialog_title"
+                style="@style/VivantDescription"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="@string/HOW_WAS_ONLINE_CONSULTATION"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/textViewColor"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_rating"
+                style="@style/VivantTitle"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="@id/txt_dialog_title"
+                app:layout_constraintStart_toStartOf="@id/txt_dialog_title"
+                app:layout_constraintTop_toBottomOf="@id/txt_dialog_title"/>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/user_rating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:numStars="5"
+                android:rating="0"
+                android:max="5"
+                android:progressTint="@color/secondary_pink"
+                android:theme="@style/RatingBar"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="@id/txt_dialog_title"
+                app:layout_constraintStart_toStartOf="@id/txt_dialog_title"
+                app:layout_constraintTop_toBottomOf="@id/txt_rating"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_comment_title"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:text="@string/FEEDBACK_COMMENT_TITLE"
+                android:textColor="@color/vivant_charcoal_grey"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@id/txt_dialog_title"
+                app:layout_constraintStart_toStartOf="@id/txt_dialog_title"
+                app:layout_constraintTop_toBottomOf="@id/user_rating"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_edt_comment"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_comment_title"
+                app:layout_constraintStart_toStartOf="@+id/txt_comment_title"
+                app:layout_constraintTop_toBottomOf="@id/txt_comment_title" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_comment"
+                    style="@style/MyEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:ellipsize="end"
+                    android:hint="@string/WRITE_YOUR_COMMENT"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    android:maxLength="100"
+                    android:maxLines="1"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_25sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/til_edt_comment"
+                app:layout_constraintStart_toStartOf="@+id/til_edt_comment"
+                app:layout_constraintTop_toBottomOf="@+id/til_edt_comment">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_cancel"
+                    style="@style/CustomButtonLeft"
+                    android:layout_width="match_parent"
+                    android:text="@string/CANCEL"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_submit"
+                    style="@style/CustomButtonRight"
+                    android:layout_width="match_parent"
+                    android:text="@string/SUBMIT"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                style="@style/CustomButton"
+                android:text="@string/SUBMIT"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_edt_comment"/>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_close"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:visibility="gone"
+        android:src="@drawable/img_cancel"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_feedback"
+        app:layout_constraintTop_toTopOf="@+id/layout_feedback"
+        app:srcCompat="@drawable/ic_close"/>
+
+    <!--    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            app:srcCompat="@drawable/img_cancel"
+            android:elevation="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

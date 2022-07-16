@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vivant.telemedicine">
+
+    <application>
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TeleMedHomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TeleMedNative.NoActionBar" />
+        <activity
+            android:name=".ui.appointmentDetails.AppointmentDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.consultAndSchedule.ConsultAndScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.BookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.JitsiActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

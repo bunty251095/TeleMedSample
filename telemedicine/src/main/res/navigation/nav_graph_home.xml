@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@+id/mainHomeFragment">
+
+    <fragment
+        android:id="@+id/mainHomeFragment"
+        android:name="com.vivant.telemedicine.ui.FragmentHomeMain"
+        tools:layout="@layout/fragment_home_main">
+
+        <action
+            android:id="@+id/action_mainHomeFragment_fragmentAppointments"
+            app:destination="@id/fragmentAppointments"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_mainHomeFragment_fragmentHealthRecords"
+            app:destination="@id/fragmentHealthRecords"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentAppointments"
+        android:name="com.vivant.telemedicine.ui.AppointmentsFragment"
+        android:label="@string/TITLE_MY_APPOINTMENTS"
+        tools:layout="@layout/fragment_appointments"/>
+
+    <fragment
+        android:id="@+id/fragmentHealthRecords"
+        android:name="com.vivant.telemedicine.ui.HealthRecordsFragment"
+        android:label="@string/TITLE_HEALTH_RECORDS"
+        tools:layout="@layout/fragment_health_records"/>
+
+</navigation>

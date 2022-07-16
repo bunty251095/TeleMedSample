@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_text_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:cardElevation="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_text_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_doctor"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/img_my_profile"
+                    app:civ_border_color="@color/almost_white"
+                    app:civ_border_width="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_doctor_name"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Adam"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    app:layout_constraintStart_toEndOf="@+id/img_doctor"
+                    app:layout_constraintTop_toTopOf="@+id/img_doctor"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_doctor_speciality"
+                    style="@style/VivantDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GENERAL_PRACTITIONER"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_doctor_name"
+                    app:layout_constraintStart_toStartOf="@+id/txt_doctor_name"/>
+
+<!--                <View
+                    android:id="@+id/view1"
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@color/dark_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_doctor_speciality"
+                    app:layout_constraintStart_toEndOf="@+id/txt_doctor_speciality"
+                    app:layout_constraintTop_toTopOf="@+id/txt_doctor_speciality"/>-->
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_doctor_experience"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="27 yrs "
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_doctor_speciality"
+                    app:layout_constraintStart_toStartOf="@+id/txt_doctor_speciality"/>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@color/dark_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_doctor_experience"
+                    app:layout_constraintStart_toEndOf="@+id/txt_doctor_experience"
+                    app:layout_constraintTop_toTopOf="@+id/txt_doctor_experience"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_doctor_gender"
+                    style="@style/VivantDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/MALE"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_doctor_speciality"
+                    app:layout_constraintStart_toEndOf="@+id/view2"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_doctor">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:layout_constraintTop_toBottomOf="@+id/img_doctor">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_date"
+                            style="@style/VivantDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11 Jun 2022"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_calender"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            app:srcCompat="@drawable/img_calander"
+                            android:tint="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_12sdp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_morning_slots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/card_date"
+                    app:layout_constraintStart_toStartOf="@+id/card_date"
+                    app:layout_constraintEnd_toEndOf="@+id/card_date">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_morning"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/MORNING"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_morning_slot_count"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(-- Slots)"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/vivant_greyish"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        app:layout_constraintStart_toEndOf="@+id/txt_morning"
+                        app:layout_constraintTop_toTopOf="@+id/txt_morning"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_morning"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_morning_slots"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        tools:listitem="@layout/item_time_slot"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_morning"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_afternoon_slots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_morning_slots"
+                    app:layout_constraintStart_toStartOf="@+id/layout_morning_slots"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_morning_slots">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_afternoon"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/AFTERNOON"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_afternoon_slot_count"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(-- Slots)"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/vivant_greyish"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        app:layout_constraintStart_toEndOf="@+id/txt_afternoon"
+                        app:layout_constraintTop_toTopOf="@+id/txt_afternoon"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_afternoon"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_afternoon_slots"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        tools:listitem="@layout/item_time_slot"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_afternoon"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_evening_slots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_afternoon_slots"
+                    app:layout_constraintStart_toStartOf="@+id/layout_afternoon_slots"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_afternoon_slots">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_evening"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/EVENING"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_evening_slot_count"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(-- Slots)"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/vivant_greyish"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        app:layout_constraintStart_toEndOf="@+id/txt_evening"
+                        app:layout_constraintTop_toTopOf="@+id/txt_evening"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_evening"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_evening_slots"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        tools:listitem="@layout/item_time_slot"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_evening"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_no_slots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/_25sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/card_date"
+                    app:layout_constraintStart_toStartOf="@+id/card_date"
+                    app:layout_constraintEnd_toEndOf="@+id/card_date">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_clock"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        app:srcCompat="@drawable/img_no_slots"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_no_data"
+                        style="@style/VivantTitle"
+                        android:gravity="center"
+                        android:text="@string/NO_SLOTS_AVAILABLE"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/img_clock"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_next"
+                    android:layout_width="0dp"
+                    android:visibility="visible"
+                    style="@style/CustomButton"
+                    android:text="@string/NEXT"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_evening_slots"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

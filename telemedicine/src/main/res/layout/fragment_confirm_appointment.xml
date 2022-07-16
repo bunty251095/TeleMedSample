@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_book_for"
+            style="@style/VivantTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/BOOK_FOR"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_book_for"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_book_for"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_appointment_date"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/DATE_OF_APPOINTMENT"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toBottomOf="@+id/txt_book_for"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_appointment_date"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="-- --- ----"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_appointment_date"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_email"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/EMAIL_ADDRESS"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toBottomOf="@+id/txt_appointment_date"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_email"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_email"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_speciality"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/SPECIALITY"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toBottomOf="@+id/txt_email"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_speciality"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_speciality"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_consultation_mode"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/MODE_OF_CONSULTATION"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toBottomOf="@+id/txt_speciality"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_consultation_mode"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_consultation_mode"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_current_medical_history"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/CURRENT_MEDICAL_HISTORY"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toBottomOf="@+id/txt_consultation_mode"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_current_medical_history"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_current_medical_history"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_current_medication"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/CURRENT_MEDICATION"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toBottomOf="@+id/txt_current_medical_history"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_current_medication"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_current_medication"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_attachment"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ATTACHMENT"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toBottomOf="@+id/txt_current_medication"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_total"
+            style="@style/VivantTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TOTAL"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_attachment"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_total"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RM --"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toTopOf="@+id/lbl_total"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_company_cover"
+            style="@style/VivantDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/COMPANY_COVER"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_total"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_company_cover"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RM --"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toTopOf="@+id/lbl_company_cover"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_self_pay"
+            style="@style/VivantDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SELF_PAY"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_company_cover"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_self_pay"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RM --"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_book_for"
+            app:layout_constraintTop_toTopOf="@+id/lbl_self_pay"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_concent"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            app:srcCompat="@drawable/ic_check"
+            android:tint="@color/colorPrimary"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/lbl_self_pay"
+            app:layout_constraintTop_toTopOf="@+id/lbl_consent_desc"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_consent_desc"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_consent_desc"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/CONSENT_TO_MEDICAL_HISTORY"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@+id/img_concent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_self_pay"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_self_pay"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_book"
+            android:layout_width="0dp"
+            style="@style/CustomButton"
+            android:text="@string/BOOK"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_consent_desc"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

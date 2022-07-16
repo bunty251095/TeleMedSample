@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_consult_and_schedule"
+    app:startDestination="@+id/appointmentDetailsFragment">
+
+    <fragment
+        android:id="@+id/appointmentDetailsFragment"
+        android:name="com.vivant.telemedicine.ui.appointmentDetails.AppointmentDetailsFragment"
+        tools:layout="@layout/fragment_appointment_details">
+
+        <argument android:name="from"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <action
+            android:id="@+id/action_appointmentDetailsFragment_rescheduleFragment"
+            app:destination="@id/rescheduleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_appointmentDetailsFragment_attachDocumentFragment"
+            app:destination="@id/attachDocumentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_appointmentDetailsFragment_bookFollowupFragment"
+            app:destination="@id/bookFollowupFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/rescheduleFragment"
+        android:name="com.vivant.telemedicine.ui.appointmentDetails.RescheduleFragment"
+        tools:layout="@layout/fragment_reschedule">
+
+        <action
+            android:id="@+id/action_rescheduleFragment_to_appointmentDetailsFragment"
+            app:popUpTo="@id/appointmentDetailsFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"/>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/attachDocumentFragment"
+        android:name="com.vivant.telemedicine.ui.appointmentDetails.AttachDocumentFragment"
+        tools:layout="@layout/fragment_attach_document">
+
+        <argument android:name="from"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <action
+            android:id="@+id/action_attachDocumentFragment_attachExisttingDocumentFragment"
+            app:destination="@id/attachExisttingDocumentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_attachDocumentFragment_to_appointmentDetailsFragment"
+            app:popUpTo="@id/appointmentDetailsFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/attachExisttingDocumentFragment"
+        android:name="com.vivant.telemedicine.ui.appointmentDetails.AttachExistingDocumentFragment"
+        tools:layout="@layout/fragment_attach_existing_document">
+
+        <argument android:name="from"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <action
+            android:id="@+id/action_attachExisttingDocumentFragment_to_attachDocumentFragment"
+            app:popUpTo="@id/attachDocumentFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"/>
+
+        <action
+            android:id="@+id/action_attachExisttingDocumentFragment_to_appointmentDetailsFragment"
+            app:popUpTo="@id/appointmentDetailsFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookFollowupFragment"
+        android:name="com.vivant.telemedicine.ui.appointmentDetails.BookFollowupFragment"
+        tools:layout="@layout/fragment_book_followup">
+
+        <action
+            android:id="@+id/action_bookFollowupFragment_to_appointmentDetailsFragment"
+            app:popUpTo="@id/appointmentDetailsFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"/>
+
+    </fragment>
+
+</navigation>

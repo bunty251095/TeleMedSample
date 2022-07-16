@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_general_practitioner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_general_practitioner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_doctor"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:background="@drawable/circle_bg"
+            android:backgroundTint="@color/shimmerColor"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_doctor_name"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_doctor_code"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_doctor_name"
+            style="@style/VivantTitle"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_8sdp"
+            android:background="@color/shimmerColor"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@+id/img_doctor"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_doctor_speciality"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_8sdp"
+            android:background="@color/shimmerColor"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_doctor_name"
+            app:layout_constraintStart_toStartOf="@+id/txt_doctor_name"
+            app:layout_constraintEnd_toEndOf="@+id/txt_doctor_name"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_doctor_age"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_8sdp"
+            android:background="@color/shimmerColor"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_doctor_speciality"
+            app:layout_constraintStart_toStartOf="@+id/txt_doctor_speciality"
+            app:layout_constraintEnd_toEndOf="@+id/txt_doctor_name"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_doctor_gender"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_8sdp"
+            android:background="@color/shimmerColor"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_doctor_age"
+            app:layout_constraintStart_toStartOf="@+id/txt_doctor_name"
+            app:layout_constraintEnd_toEndOf="@+id/txt_doctor_name"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_doctor_code"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_8sdp"
+            android:background="@color/shimmerColor"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_doctor_gender"
+            app:layout_constraintStart_toStartOf="@+id/txt_doctor_name"
+            app:layout_constraintEnd_toEndOf="@+id/txt_doctor_name"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

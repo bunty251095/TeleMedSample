@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_general_practitioner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    android:layout_marginTop="@dimen/_7sdp"
+    android:layout_marginBottom="@dimen/_7sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_upcoming_appointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_doctor"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/circle_bg"
+            android:tint="@color/shimmerColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_doctor_name"
+            app:layout_constraintBottom_toTopOf="@+id/txt_appointment_status"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_appointment_status"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_11sdp"
+            android:background="@color/shimmerColor"
+            app:layout_constraintStart_toStartOf="@+id/img_doctor"
+            app:layout_constraintEnd_toEndOf="@+id/img_doctor"
+            app:layout_constraintTop_toBottomOf="@+id/img_doctor"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_attach_document"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_date_time"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="15 Jun 2022\n01:30 PM"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="@color/vivant_icon_warm_grey"
+            app:layout_constraintTop_toTopOf="@+id/img_option"
+            app:layout_constraintEnd_toStartOf="@+id/img_option"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_option"
+            android:visibility="invisible"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            app:srcCompat="@drawable/img_more"
+            android:tint="@color/selector_primary_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_doctor_name"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_7sdp"
+            android:background="@color/shimmerColor"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintStart_toEndOf="@+id/img_doctor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_date_time"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_doctor_speciality"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_7sdp"
+            android:background="@color/shimmerColor"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_doctor_name"
+            app:layout_constraintStart_toStartOf="@+id/txt_doctor_name"
+            app:layout_constraintEnd_toEndOf="@+id/txt_doctor_name"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_doctor_exp"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_7sdp"
+            android:background="@color/shimmerColor"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_doctor_speciality"
+            app:layout_constraintStart_toStartOf="@+id/txt_doctor_name"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_doctor_gender"
+            style="@style/VivantDescription"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/MALE"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_doctor_exp"
+            app:layout_constraintStart_toStartOf="@+id/txt_doctor_name"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_doctor_fees"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_7sdp"
+            android:background="@color/shimmerColor"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_doctor_gender"
+            app:layout_constraintStart_toStartOf="@+id/txt_doctor_name"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_attach_document"
+            style="@style/CustomButtonLeft"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:text=""
+            android:textSize="@dimen/_10sdp"
+            android:background="@color/shimmerColor"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_mode"
+            app:layout_constraintStart_toStartOf="@+id/txt_doctor_fees"
+            app:layout_constraintTop_toBottomOf="@+id/txt_doctor_fees"/>
+
+        <!--        <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_mode"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    style="@style/CustomButtonRight"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:text="@string/AUDIO_CALL"
+                    android:textSize="@dimen/_10sdp"
+                    android:drawableStart="@drawable/img_btn_audio_call"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_attach_document"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_attach_document"
+                    app:layout_constraintTop_toTopOf="@+id/btn_attach_document"/>-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_mode"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/shimmerColor"
+            android:layout_marginStart="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_attach_document"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_attach_document"
+            app:layout_constraintTop_toTopOf="@+id/btn_attach_document">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_mode"
+                android:visibility="invisible"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@drawable/img_btn_audio_call"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txt_mode"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_mode"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/img_mode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/img_mode"
+                app:layout_constraintBottom_toBottomOf="@+id/img_mode"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

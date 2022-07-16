@@ -1,0 +1,290 @@
+<resources>
+    <string name="app_name">TeleMed</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="YES">Yes</string>
+    <string name="NO">No</string>
+    <string name="NONE">None</string>
+    <string name="MALE">Male</string>
+    <string name="FEMALE">Female</string>
+    <string name="SAVE">Save</string>
+    <string name="SUBMIT">Submit</string>
+    <string name="RESTART">Restart</string>
+    <string name="SEND">Send</string>
+    <string name="FINISH">Finish</string>
+    <string name="LOGOUT">Logout</string>
+    <string name="THATS_ALL">That\'s All</string>
+    <string name="DONE">Done</string>
+    <string name="NEXT">Next</string>
+    <string name="PREVIOUS">Previous</string>
+    <string name="OK">OK</string>
+    <string name="OR">Or</string>
+    <string name="CONFIRM">Confirm</string>
+    <string name="PROCEED">Proceed</string>
+    <string name="SELECT">Select</string>
+    <string name="SELECT_DATE">Select Date</string>
+    <string name="CLOSE">Close</string>
+    <string name="CANCEL">Cancel</string>
+    <string name="EXIT">Exit</string>
+    <string name="BACK">Back</string>
+    <string name="START">Start</string>
+    <string name="LOADING">Loading</string>
+    <string name="CONTINUE">Continue</string>
+    <string name="CALCULATE">Calculate</string>
+    <string name="RECALCULATE">Recalculate</string>
+    <string name="DELETE">Delete</string>
+    <string name="UPDATE">Update</string>
+    <string name="UPLOAD">Upload</string>
+    <string name="EDIT">Edit</string>
+    <string name="DOWNLOAD">Download</string>
+    <string name="SHARE">Share</string>
+    <string name="VIEW">View</string>
+    <string name="ADD">Add</string>
+    <string name="ADD_MORE">Add More</string>
+    <string name="YRS">yrs of Experience</string>
+    <string name="VERSION">Version</string>
+
+    <string name="TOTAL">Total</string>
+    <string name="SESSION">Session</string>
+    <string name="RECOMMENDED">Recommended</string>
+    <string name="COMING_SOON">Coming Soon</string>
+
+    <string name="EMAIL_ADDRESS">Email Address</string>
+
+    <string name="SOMETHING_WENT_WRONG">Something went wrong</string>
+    <string name="MSG_SESSION_EXPIRED">Seems your session is expired, please login again.</string>
+    <string name="ERROR_INTERNET_UNAVAILABLE">Seems like you are offline. Please check your internet connection and try again</string>
+    <string name="ERROR_GENERAL">Unable to connect, please try again</string>
+    <string name="AWW_SNAP">Aww! Snap!</string>
+
+    <string name="LOGOUT_APPLICATION">Logout Application</string>
+    <string name="NO_DATA_AVAILABLE">No Data Available</string>
+
+    <string name="MENU_APPOINTMENTS">Appointments</string>
+    <string name="MENU_MY_HISTORY">My History</string>
+    <string name="MENU_HEALTH_RECORDS">Health Records</string>
+
+    <string name="APPOINTMENTS">Appointments</string>
+    <string name="TITLE_MY_APPOINTMENTS">My Appointments</string>
+    <string name="TITLE_MY_HISTORY">My History</string>
+    <string name="TITLE_HEALTH_RECORDS">Health Records</string>
+
+    <string name="TITLE_CHOOSE_MODE">Choose Mode</string>
+    <string name="TITLE_CHOOSE_SPECIALIZATION">Choose Specialization</string>
+    <string name="TITLE_CHOOSE_DOCTOR">Choose Doctor</string>
+    <string name="TITLE_CHOOSE_SLOT">Choose Slot</string>
+    <string name="TITLE_DESCRIBE_SYMPTOMS">Describe Symptoms</string>
+    <string name="TITLE_CONFIRM_APPOINTMENT">Confirm Appointment</string>
+
+    <string name="TITLE_APPOINTMENT_DETAILS">Appointment Details</string>
+    <string name="TITLE_ATTACH_DOCUMENT">Attach Documents</string>
+    <string name="TITLE_RESCHEDULE">Reschedule</string>
+    <string name="TITLE_FOLLOWUP">Follow Up</string>
+
+    <string name="STEP_CHOOSE_MODE">Choose\nMode</string>
+    <string name="STEP_CHOOSE_SPECIALIZATION">Choose\nSpecialization</string>
+    <string name="STEP_CHOOSE_DOCTOR">Choose\nDoctor</string>
+    <string name="STEP_CHOOSE_SLOT">Choose\nSlot</string>
+    <string name="STEP_DESCRIBE_SYMPTOMS">Describe\nSymptoms</string>
+    <string name="STEP_CONFIRM_APPOINTMENT">Confirm\nAppointment</string>
+
+    <string name="TODAY">Today</string>
+    <string name="PAST">Past</string>
+    <string name="UPCOMING">Upcoming</string>
+    <string name="VIEW_RECORD">View Record</string>
+
+    <string name="CANCELLED">Cancelled</string>
+    <string name="CONFIRMED">Confirmed</string>
+    <string name="UNATTENDED">Unattended</string>
+    <string name="NOT_CONFIRMED">Not\nConfirmed</string>
+    <string name="COMPLETED">Completed</string>
+    <string name="NOT_COMPLETED">Not\nCompleted</string>
+
+    <string name="AUDIO">Audio</string>
+    <string name="VIDEO">Video</string>
+    <string name="CHAT">Chat</string>
+
+    <string name="VIDEO_CALL">Video Call</string>
+    <string name="VIDEO_CALL_DESC">Get Full Consultation through our Video Call Technology</string>
+
+    <string name="AUDIO_CALL">Audio Call</string>
+    <string name="AUDIO_CALL_DESC">Get Full Consultation through a phone call from our doctors</string>
+
+    <string name="TEXT_CHAT">Text Chat</string>
+    <string name="TEXT_CHAT_DESC">Get your basic medical questions answered by one of our Qualified Doctors or Patient Care Consultant</string>
+
+    <string name="DOCTORS_SPECIALIZATION">Doctor\'s Specialization</string>
+    <string name="GENERAL_PRACTITIONER">General Practitioner</string>
+    <string name="SPECIALISTS">Specialists</string>
+
+    <string name="MORNING">Morning</string>
+    <string name="AFTERNOON">Afternoon</string>
+    <string name="EVENING">Evening</string>
+    <string name="SLOT">Slot</string>
+    <string name="SLOTS">Slots</string>
+    <string name="NO_SLOTS_AVAILABLE">No Slots Available</string>
+
+    <string name="NO_ATTACHMENTS">You do not have any Attachments</string>
+
+    <string name="ORDER_MEDICINES_FROM_E_FARMA">Order Medicines from E-farma</string>
+    <string name="ADDRESS">Address*</string>
+    <string name="CITY">City*</string>
+    <string name="STATE">State*</string>
+    <string name="POST_CODE">Postcode*</string>
+
+    <string name="CURRENT_MEDICAL_PROBLEM">Current Medical Problem</string>
+    <string name="CURRENT_MEDICATION">Current Medication</string>
+    <string name="WRITE_HERE">Write here…</string>
+    <string name="ADD_ATTACHMENTS">Add Attachments(if any)</string>
+    <string name="ADD_ATTACHMENTS_DESC">Upload any reports or images to help the doctor consult you better</string>
+    <string name="ATTACH_FILE_TYPES">Attach .pdf, .jpg or .png files here(max 5 mb)</string>
+    <string name="UPLOAD_EXISTING_DOCUMENT">Upload Existing Document</string>
+    <string name="UPLOAD_NEW_DOCUMENT">Upload New Document</string>
+    <string name="UPLOAD_ATTACHMENTS">Upload Attachments</string>
+    <string name="UPLOAD_ATTACHMENTS_DESC">Please Upload your report in .pdf, .jpg or .png Format (max 5 mb)</string>
+    <string name="PLEASE_SELECT_FROM_BELOW_LISTED_DOCUMENTS">Please Select from below listed documents</string>
+
+    <string name="BOOK_FOR">Book For</string>
+    <string name="PATIENT_NAME">Patient Name</string>
+    <string name="DATE_OF_APPOINTMENT">Date of Appointment</string>
+    <string name="DATE_AND_TIME">Date and Time</string>
+    <string name="SPECIALITY">Speciality</string>
+    <string name="MODE_OF_CONSULTATION">Mode of Consultation</string>
+    <string name="SELECT_PREFERRED_SLOT">Select Preferred Slot</string>
+    <string name="CONSULTATION_MODE">Consultation Mode</string>
+    <string name="CONSULTATION_FEES">Consultation Fees</string>
+
+    <string name="ORDER_ONLINE">Order Online</string>
+    <string name="MEDICINE_ORDER_PLACED">Medicine Order Placed to E-farma</string>
+    <string name="SHARED_PROBLEMS">Shared Problems</string>
+    <string name="RECEIVED_DOCUMENTS">Received Documents</string>
+    <string name="CHIEF_COMPLAINTS">Chief Complaints</string>
+    <string name="MEDICATION_PRESCRIBED">Medication Prescribed</string>
+    <string name="ADVICE">Advice</string>
+    <string name="INVESTIGATIONS">Investigations</string>
+
+    <string name="CURRENT_MEDICAL_HISTORY">Current Medical History</string>
+    <string name="NOT_MENTIONED">Not Mentioned</string>
+    <string name="ATTACHMENT">Attachment</string>
+    <string name="ATTACH_DOCUMENT">Attach Document</string>
+    <string name="ATTACH_DOCUMENTS">Attach Documents</string>
+    <string name="COMPANY_COVER">Company Cover</string>
+    <string name="SELF_PAY">Self Pay</string>
+    <string name="CONSENT_TO_MEDICAL_HISTORY">I give consent to the medical doctor to view my past medical record/history</string>
+    <string name="PAY_AND_BOOK">Pay and Book</string>
+    <string name="BOOK">Book</string>
+    <string name="GO_TO_HOME_PAGE">Go To Home Page</string>
+    <string name="CONGRATULATIONS">Congratulations !</string>
+    <string name="CONGRATULATIONS_DESC">Your Appointment has been booked successfully.</string>
+    <string name="SEARCHING_FOR">Searching for</string>
+    <string name="SEARCHING_FOR_DESC">Please wait for 2–3 minutes, your appointment request has been received, we are waiting for doctor to confirm it</string>
+
+    <string name="HOW_WAS_ONLINE_CONSULTATION">How was the Online Consultation</string>
+    <string name="FEEDBACK_COMMENT_TITLE">We appreciate your feedback,please mention your concern in the comment box</string>
+    <string name="WRITE_YOUR_COMMENT">Write your comment</string>
+    <string name="PLEASE_SELECT_RATING">Please Select Rating</string>
+    <string name="PLEASE_WRITE_COMMENT">Please write your comment</string>
+
+    <string name="BAD">Bad</string>
+    <string name="IMPROVEMENT_NEEDED">Improvement Needed</string>
+    <string name="FAIR">Fair</string>
+    <string name="GOOD">Good</string>
+    <string name="EXCELLENT">Excellent</string>
+
+    <string name="APPOINTMENT_CONFORMATION">Appointment Confirmation</string>
+    <string name="APPOINTMENT_CONFORMATION_DESC">Your Appointment Request is Confirmed with</string>
+
+    <string name="APPOINTMENT_CANCELLATION">Appointment Cancellation</string>
+    <string name="APPOINTMENT_CANCELLATION_DESC">Are you sure that you want to Cancel the Appointment Request</string>
+    <string name="APPOINTMENT_CANCELLATION_DONE">Appointment Request has been Cancelled</string>
+
+    <string name="REASON_RESCHEDULING">Please provide a reason for Rescheduling…</string>
+
+    <string name="FROM_RM">From RM</string>
+    <string name="DR">Dr.</string>
+    <string name="HOME">Home</string>
+    <string name="NOTIFICATION">Notification</string>
+    <string name="CLEAR_ALL">Clear All</string>
+    <string name="CLEAR_ALL_DESC">Are you sure that you want to clear all the Notifications?</string>
+
+    <string name="WELCOME_TO_PM_CARE">Welcome to PM Care</string>
+    <string name="TELE_CONSULTATION">Tele-Consultation</string>
+    <string name="TELE_CONSULTATION_NOTE">Reminder : This tele-consultation service is meant for long-term medications follow-up only. If there is an emergency, please use our ambulance service or call 911. Thank you.</string>
+
+    <string name="CONSULT_NOW">Consult\nNow</string>
+    <string name="SPEAK_TO_YOUR_DOCTOR_NOW">Speak to your doctor now</string>
+    <string name="SCHEDULE_APPOINTMENT">Schedule\nAppointment</string>
+    <string name="SCHEDULE_YOUR_CONSULTATION">Schedule your consultation</string>
+
+    <string name="CONSULT_NOW2">Consult Now</string>
+    <string name="SCHEDULE_APPOINTMENT2">Schedule Appointment</string>
+
+    <string name="UPCOMING_APPOINTMENTS">Upcoming Appointments</string>
+    <string name="NO_APPOINTMENTS">You don\'t have any</string>
+
+    <string name="PRESCRIPTION">Prescription</string>
+    <string name="LAB_REPORT">Lab Report</string>
+    <string name="HRA_REPORT">HRA Report</string>
+
+    <string name="RESCHEDULE_APPOINTMENT">Reschedule Appointment</string>
+    <string name="CANCEL_APPOINTMENT">Cancel Appointment</string>
+    <string name="VIEW_INVOICE">View Invoice</string>
+    <string name="SAVE_FEEDBACK">Save Feedback</string>
+    <string name="BOOK_FOLLOW_UP">Book Follow Up</string>
+
+    <string name="YES_CANCEL">Yes, Cancel</string>
+    <string name="TYPE_YOUR_REASON_FOR_CANCELLATION">Type your reason for cancellation</string>
+
+    <string name="PLEASE_PROVIDE_YOUR_CONCENT">Please provide your Consent</string>
+    <string name="PLEASE_ENTER_REASON_RESCHEDULE">Please Enter a reason for Rescheduling</string>
+    <string name="PLEASE_ENTER_REASON_CANCELLATION">Please Enter Reason for the Cancellation</string>
+    <string name="PLEASE_SELECT_APPOINTMENT_TIME">Please select Appointment Time</string>
+    <string name="PLEASE_SELECT_DIFFERENT_APPOINTMENT_TIME">Please select different Appointment Time</string>
+    <string name="APPOINTMENT_RESCHEDULED_SUCCESSFULLY">Your Appointment has been Rescheduled Successfully</string>
+    <string name="APPOINTMENT_CANCELLED_SUCCESSFULLY">Your Appointment has been Cancelled Successfully</string>
+    <string name="FEEDBACK_SHARED_SUCCESSFULLY">Your Feedback has been shared Successfully</string>
+    <string name="DETAILS_NOT_AVAILABLE">Details not Available</string>
+
+    <string name="PLEASE_ENTER_ADDRESS">Please Enter Address</string>
+    <string name="PLEASE_ENTER_CITY">Please Enter City</string>
+    <string name="PLEASE_ENTER_STATE">Please Enter State</string>
+    <string name="PLEASE_ENTER_POST_CODE">Please Enter Postcode</string>
+    <string name="ORDER_PLACED_SUCCESS">Your Order has been placed Successfully</string>
+
+    <string name="ADD_DETAILS">Add Details</string>
+    <string name="DATE_OF_UPLOAD">Date of Upload</string>
+
+    <string name="NAVIGATION_DRAWER_OPEN">Open navigation drawer</string>
+    <string name="NAVIGATION_DRAWER_CLOSE">Close navigation drawer</string>
+
+    <string name="MSG_DELETE_SHARED_CONFIRMATION">Do you really want to delete</string>
+    <string name="DELETE_RECORD">Delete Record</string>
+    <string name="MSG_DELETE_CONFIRMATION">Are you sure that you want to delete the Selected Record from list?</string>
+    <string name="MSG_RECORD_DELETED">Record deleted Successfully</string>
+    <string name="NOTIFICATION_CANCELED_SUCCESS">Notification has been cleared Successfully</string>
+
+    <string name="APPOINTMENT_RESCHEDULED_SUCCESS">Appointment Rescheduled Successfully</string>
+    <string name="APPOINTMENT_CANCELLED_SUCCESS">Appointment Cancelled Successfully</string>
+
+    <string name="PLEASE_SELECT_DOCUMENT">Please Select Document</string>
+    <string name="RECORD_SHARED_SUCCESS">Attachments Shared With Doctor Successfully</string>
+    <string name="RECORD_REMOVED_SUCCESS">Attachment Removed Successfully</string>
+    <string name="MSG_DELETE_CONFIRMATION2">Do you really want to delete ?</string>
+
+    <string name="SELECT_A_FILE">Select a file</string>
+    <string name="ERROR_FILE_SIZE_LESS_THEN_5MB">File size must be less than 5MB</string>
+    <string name="ERROR_UNABLE_TO_READ_FILE">Unable to read file, please try again</string>
+    <string name="ERROR_FILES_NOT_ACCEPTED">files are not accepted</string>
+    <string name="ERROR_UNABLE_TO_OPEN_FILE">Unable to open file</string>
+    <string name="ERROR_FILE_DOES_NOT_EXIST">File does not exist</string>
+    <string name="ERROR_NO_APPLICATION_TO_VIEW_PDF">No Application Available to View PDF</string>
+    <string name="ONLY_3_ATTACHMENTS_CAN_BE_ADDED">Only 3 Attachments can be Added</string>
+
+    <string name="PERMISSION_REQUIRED">Permission Required</string>
+    <string name="NEED_STORAGE_PERMISSION">For storing and reading files, we need storage permission</string>
+    <string name="NEED_CAMERA_PERMISSION">For clicking snap to upload we need camera permission</string>
+    <string name="ERROR_STORAGE_PERMISSION">Storage Permission is Required to Proceed further</string>
+    <string name="ERROR_CAMERA_PERMISSION">camera Permission is Required to Proceed further</string>
+
+</resources>

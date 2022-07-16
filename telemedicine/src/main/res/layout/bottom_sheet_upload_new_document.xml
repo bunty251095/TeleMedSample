@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_add_details"
+            style="@style/VivantDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ADD_DETAILS"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/textViewColor"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_selected_doc"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:elevation="@dimen/_3sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_pdf"
+            android:background="@drawable/btn_border_normal"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_add_details"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_add_details"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_cancel_doc"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="-10dp"
+            android:background="@drawable/circle_border"
+            app:srcCompat="@drawable/ic_close"
+            android:tint="@color/vivant_charcoal_grey_55"
+            android:elevation="@dimen/_3sdp"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintEnd_toEndOf="@+id/img_selected_doc"
+            app:layout_constraintTop_toTopOf="@+id/img_selected_doc"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_upload_date"
+            style="@style/VivantDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DATE_OF_UPLOAD"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/textViewColor"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@+id/img_selected_doc"
+            app:layout_constraintTop_toBottomOf="@+id/img_selected_doc"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lbl_upload_date"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_upload_date">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:layout_constraintTop_toBottomOf="@+id/img_doctor">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_date"
+                    style="@style/VivantDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11 Jun 2022"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_calender"
+                    android:layout_width="@dimen/_27sdp"
+                    android:layout_height="@dimen/_27sdp"
+                    app:srcCompat="@drawable/img_calander"
+                    android:tint="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            style="@style/CustomButton"
+            android:text="@string/SAVE"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/card_date"
+            app:layout_constraintStart_toStartOf="@+id/card_date"
+            app:layout_constraintTop_toBottomOf="@+id/card_date"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
