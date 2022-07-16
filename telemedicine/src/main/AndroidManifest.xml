@@ -8,14 +8,15 @@
             android:exported="false" />
         <activity
             android:name=".ui.TeleMedHomeActivity"
-            android:exported="false"
-            android:theme="@style/Theme.TeleMedNative.NoActionBar" />
+            android:exported="false" />
         <activity
             android:name=".ui.appointmentDetails.AppointmentDetailsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".ui.consultAndSchedule.ConsultAndScheduleActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".ui.BookingActivity"
             android:exported="false" />

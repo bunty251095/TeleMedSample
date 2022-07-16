@@ -39,7 +39,7 @@ class MainActivity : BaseActivity() {
         try {
             binding = ActivityMainBinding.inflate(layoutInflater)
             setContentView(binding.root)
-            supportActionBar!!.hide()
+            //supportActionBar!!.hide()
             initialise()
             setClickable()
         } catch ( e : Exception ) {

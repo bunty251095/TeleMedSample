@@ -28,7 +28,7 @@ class SplashActivity : BaseActivity() {
         try {
             binding = ActivitySplashBinding.inflate(layoutInflater)
             setContentView(binding.root)
-            supportActionBar!!.hide()
+            //supportActionBar!!.hide()
 
             if (intent.hasExtra(Constants.DATA)) {
                 data = intent.getStringExtra(Constants.DATA)!!

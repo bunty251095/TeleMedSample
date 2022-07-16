@@ -43,8 +43,8 @@ class ConsultAndScheduleActivity : BaseActivity(),ChooseStepAdapter.OnStepClickL
     }
 
     private fun initialise() {
-        supportActionBar!!.hide()
-        //setSupportActionBar(binding.toolBarView.toolbarCommon)
+        //supportActionBar!!.hide()
+        setSupportActionBar(binding.toolBarView.toolbarCommon)
 
         // Setting up a back button
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_consult_and_schedule) as NavHostFragment
@@ -66,9 +66,14 @@ class ConsultAndScheduleActivity : BaseActivity(),ChooseStepAdapter.OnStepClickL
                 else -> resources.getString(R.string.TELE_CONSULTATION)
             }
 
+            supportActionBar!!.setDisplayShowTitleEnabled(false)
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+            supportActionBar?.setHomeButtonEnabled(true)
+            supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back)
+
         }
 
-        binding.toolBarView.toolbarCommon.setNavigationIcon(R.drawable.ic_back)
+        //binding.toolBarView.toolbarCommon.setNavigationIcon(R.drawable.ic_back)
 
         binding.toolBarView.toolbarCommon.setNavigationOnClickListener {
             onBackPressed()

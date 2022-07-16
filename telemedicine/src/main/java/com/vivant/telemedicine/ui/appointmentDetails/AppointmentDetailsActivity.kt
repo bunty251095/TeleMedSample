@@ -35,7 +35,8 @@ class AppointmentDetailsActivity : BaseActivity() {
         }
     }
     private fun initialise() {
-        supportActionBar!!.hide()
+        //supportActionBar!!.hide()
+        setSupportActionBar(binding.toolBarView.toolbarCommon)
 
         // Setting up a back button
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_appointment_details) as NavHostFragment
@@ -69,9 +70,14 @@ class AppointmentDetailsActivity : BaseActivity() {
                 else -> resources.getString(R.string.TELE_CONSULTATION)
             }
 
+            supportActionBar!!.setDisplayShowTitleEnabled(false)
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+            supportActionBar?.setHomeButtonEnabled(true)
+            supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back)
+
         }
 
-        binding.toolBarView.toolbarCommon.setNavigationIcon(R.drawable.ic_back)
+        //binding.toolBarView.toolbarCommon.setNavigationIcon(R.drawable.ic_back)
 
         binding.toolBarView.toolbarCommon.setNavigationOnClickListener {
             onBackPressed()

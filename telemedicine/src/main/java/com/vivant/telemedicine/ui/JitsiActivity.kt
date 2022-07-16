@@ -43,7 +43,7 @@ class JitsiActivity : JitsiMeetActivity() {
                 roomName = intent.getStringExtra(Constants.ROOM_NAME)!!
                 Utilities.printLogError("RoomName--->$roomName")
             }
-            supportActionBar!!.hide()
+            //supportActionBar!!.hide()
             initialiseJitsi()
             registerForBroadcastMessages()
             //launchAppointment(roomName)
