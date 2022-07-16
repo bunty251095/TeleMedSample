@@ -1,9 +1,14 @@
 <resources>
 
-    <style name="Theme.TeleMedNative.NoActionBar">
+    <style name="Theme.TeleMedNative.NoActionBar" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+<!--    <style name="Theme.TeleMedNative.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>-->
 
     <style name="Theme.TeleMedNative.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
